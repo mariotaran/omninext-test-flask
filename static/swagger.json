@@ -66,6 +66,21 @@
                                 }
                             }
                         }
+                    },
+                    "400": {
+                        "description": "Provide name property !",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/BadRequestResponse"
+                                }
+                            },
+                            "application/xml": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/BadRequestResponse"
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -106,11 +121,20 @@
                             }
                         }
                     },
-                    "400": {
-                        "description": "Invalid id supplied"
-                    },
                     "404": {
-                        "description": "User not found"
+                        "description": "User not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/NotFoundResponse"
+                                }
+                            },
+                            "application/xml": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/NotFoundResponse"
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -141,6 +165,24 @@
                     "name": {
                         "type": "string",
                         "example": "mario"
+                    }
+                }
+            },
+            "NotFoundResponse": {
+                "type": "object",
+                "properties": {
+                    "error": {
+                        "type": "string",
+                        "example": "Could not find user with provided \"userId\""
+                    }
+                }
+            },
+            "BadRequestResponse": {
+                "type": "object",
+                "properties": {
+                    "error": {
+                        "type": "string",
+                        "example": "Please provide \"name\""
                     }
                 }
             }
