@@ -2,7 +2,7 @@
     "openapi": "3.0.3",
     "info": {
         "title": "Swagger User API - OpenAPI 3.0",
-        "description": "This is a Server based on the OpenAPI 3.0 specification.\n\nSome useful links:\n- [The source API definition for the User API](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+        "description": "This is a Server based on the OpenAPI 3.0 specification.\n\nSome useful links:\n- [The source API definition for the User API](https://github.com/mariotaran/omninext-test-flask/blob/main/static/swagger.json)",
         "contact": {
             "email": "marioalfonso.tarantini@gmail.com"
         },

@@ -41,4 +41,4 @@ def resource_not_found(e):
 
 @app.route('/')
 def homepage():
-    return 'This is a User CRUD Server based on the OpenAPI 3.0 specification. <a href="https://topv2h1fuc.execute-api.us-east-1.amazonaws.com/swagger/">Visit swagger page.</a>'
+    return 'This is a Server based on the OpenAPI 3.0 specification. <a href="https://topv2h1fuc.execute-api.us-east-1.amazonaws.com/swagger/">Visit swagger page.</a>'
