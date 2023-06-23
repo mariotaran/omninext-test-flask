@@ -27,7 +27,7 @@
         "/user": {
             "post": {
                 "tags": [
-                    "users"
+                    "user"
                 ],
                 "summary": "Create user",
                 "operationId": "createUser",
@@ -88,7 +88,7 @@
         "/user/{id}": {
             "get": {
                 "tags": [
-                    "users"
+                    "user"
                 ],
                 "summary": "Get user by id",
                 "description": "The id must be an uuid",
