@@ -19,12 +19,12 @@
     ],
     "tags": [
         {
-            "name": "users",
+            "name": "user",
             "description": "Operations about user"
         }
     ],
     "paths": {
-        "/users": {
+        "/user": {
             "post": {
                 "tags": [
                     "users"

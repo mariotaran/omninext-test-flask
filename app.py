@@ -28,7 +28,7 @@ def getUserById(user_id):
 
 
 # Route to create a new user
-@app.route('/users', methods=['POST'])
+@app.route('/user', methods=['POST'])
 def createUser():
     return create_user(request)
 
